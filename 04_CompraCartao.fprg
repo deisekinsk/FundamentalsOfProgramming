@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Deise Kinsk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-03 01:51:48 "/>
+        <attribute name="created" value="RGVpc2UgS2luc2s7REVTS1RPUC1LSU5TSzsyMDIwLTA1LTAzOyIwMTo0Njo1NyAiOzMxOTE="/>
+        <attribute name="edited" value="RGVpc2UgS2luc2s7REVTS1RPUC1LSU5TSzsyMDIwLTA1LTAzOyIwMTo1MTo0OCAiOzM7MzI5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente, numero" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cartao"/>
+            <if expression="cartao">
+                <then>
+                    <input variable="numero"/>
+                </then>
+                <else>
+                    <output expression="&quot;A loja s&#243; faz compra com cart&#227;o.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

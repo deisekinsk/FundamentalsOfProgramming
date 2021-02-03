@@ -1,0 +1,700 @@
+//Exercício: Criando variáveis
+
+var idade = 32
+var peso = 64
+
+//Exercício de fixação - Criando variáveis
+
+var nome = "Deise"
+var sobrenome = "Kinsk"
+var numeroDaSorte = 17
+var idade = 32
+
+//Exercício: Tipos de dados
+
+var idade = 32
+var sobrenome = "Kinsk"
+var salarioMinimo =765.98
+
+//Tipos de Dados Fixação
+
+var nome = "Deise"
+var idade = 32
+var altura = 1.62
+var solteiro = true
+var seriesFavoritas = ["Sinner","Dexter","Blacklist"]
+
+//Exercício: Cartão de Visita
+
+var nome = "Natalia"
+var sobrenome = "Lira"
+var profissao = "Programadora"
+var cartaoDeVisita = nome +' ' + sobrenome + ' - ' + profissao
+
+console.log(cartaoDeVisita)
+
+//Exercício: Cálculos
+
+var numeroA = 100
+var numeroB = 257
+var soma = numeroA + numeroB
+var subtracao = numeroA - numeroB
+var multiplicacao = numeroA * numeroB
+var divisao = numeroA / numeroB
+
+//Exercício - Cálculo de Lucros
+
+var janeiro =  100
+var fevereiro = 300
+var marco = 90
+
+var valorTotal = janeiro + fevereiro + marco
+console.log (valorTotal) // Imprimere resultado
+
+//Exercício: Cálculo de média
+
+var trabalhoDeHistoria = 8.0
+var trabalhoDeMatematica = 7.0
+var trabalhoDeCiencia = 10
+var trabalhoDeGeografia = 9.5
+var totalDeTrabalhos = 4
+// escreva seu código aqui
+var media = (trabalhoDeHistoria + trabalhoDeMatematica + trabalhoDeCiencia + trabalhoDeGeografia) / 4
+console.log (media) //Imprime resultado
+
+//Condicional IF
+
+var nome = "João"
+var idade = 17
+
+if (idade == 17) {
+
+    console.log ("Olá, " + nome + "Você passou no nosso teste e já pode dirigir!")
+}
+
+if (idade >= 18) {
+     
+    console.log ("Olá, " + nome)
+}
+
+
+
+//Condicionais - Conta bancária
+
+var saldo = 19.9 //precisamos de uma variável saldo que guarda um número decimal(float)
+
+if (saldo > 0) //maior que 0 (zero)
+ {
+
+    console.log("Seu saldo está positivo! Gostaria de fazer um investimento?")
+}
+
+if (saldo < 0) {
+     
+    console.log("Seu saldo está negativo! Gostaria de fazer um empréstimo?") //imprime para saldo menos que zero
+}
+
+//Condicional - Votação
+
+var idade = 19//precisamos de uma variável saldo que guarda um número decimal(float)
+
+if (idade >= 18)//voto é obrigatório a partir dos 18 anos
+ {
+
+    console.log("Você é obrigado a votar")//informe ao usuário usando console.log()
+}
+
+if (idade == 16)//opcional quando idade for igual a 16
+{
+     
+    console.log("Seu voto é opcional")//informe ao usuário usando console.log()
+}
+
+//Condicionais - Autoescola
+
+var idade = 15
+
+if (idade >= 18) {
+    console.log("Você já pode dirigir!")
+} else {
+    console.log("Ops, você ainda não tem a idade mínima para dirigir!")
+}
+
+//Condicionais - Estrangeiro
+
+var estrangeiro = true
+console.log(estrangeiro)
+if (estrangeiro) {
+console.log("Você poderia apresentar seu RNE, por favor?")
+}else {
+console.log("Você poderia apresentar seu CPF, por favor?");
+}
+
+//Condicional IF ELSE - Aposentado
+
+var idade = 40
+
+ if (idade > 65) {
+console.log("Você já pode se aposentar")
+} else {
+console.log("Você ainda não pode se aposentar")
+}
+
+//Condicionais - IF ELSE - Par ou ímpar?
+
+var numeroDaSorte = 18
+if (numeroDaSorte % 2 == 0){
+    console.log("Par") // escreva seu código aqui
+} else {
+    console.log("Ímpar")
+}
+
+//Condicional ELSE IF - Petshop
+
+var petPeso = 7
+
+if(petPeso < 4){
+console.log('Abaixo do Peso')
+}else if(petPeso >= 10){
+console.log('Acima do Peso')
+}else {
+console.log('Peso normal')
+}
+
+//Condicional ELSE IF - Lados Iguais
+
+var ladosIguais = 0 //variável ladosIguais
+// seu código aqui
+console.log("Triangulo")
+if (ladosIguais == 3){
+    console.log("Equilátero")
+} else if (ladosIguais == 2) {
+    console.log("Isósceles")
+} else {
+    console.log("Escaleno")
+}
+
+//Condicionais - Operadores lógicos
+
+var produtoQtd = 3
+var produtoAtivo = true
+// sua condição aqui
+if(produtoQtd >0 && produtoAtivo){
+console.log("Você pode finalizar essa compra")
+} else {
+console.log("Produto não está disponível para compra")
+}
+
+//Condicionais - Operadores lógicos - Pode subir?
+
+var usuarioAltura = 170
+var usuarioIdade = 21
+
+//seu código aqui
+
+if(usuarioAltura >150 || usuarioIdade >= 21){
+console.log("Você pode subir")
+} else {
+console.log("Desculpe, você não atende os requisitos para usar o brinquedo")
+}
+
+//Condicional - Operadores lógicos - Banco
+
+var diaSemana = 'sabado'
+
+// Seu código aqui
+if(diaSemana != "sabado" && diaSemana != "domingo"){
+console.log("Você pode ir ao banco")
+} else {
+console.log("O banco está fechado, tente outro dia")
+}
+
+//Tabuada
+
+var tabuada = 7
+
+for (var i = 1; i < 11; i++) {
+
+console.log (tabuada + " x " + i + " = " + (tabuada * i))
+
+}
+
+//Bom dia!
+
+for (var i = true; i < 8; i++) {
+console.log("Bom dia, grupo!")
+}
+
+//Loop com Array - Lista de Carros
+
+var listaDeCarros = [ "Fox", "Uno", "Gol", "Astra", "Fiesta"]
+
+// Seu loop aqui:
+for (let i = 0; i < listaDeCarros.length; i++) {
+console.log("Nome do Carro: " + listaDeCarros[i])
+}
+
+//Loop com Array - Lucros
+
+var listaDeLucro = [100, 30, 300, -10, 600, 10]
+var lucroTotal = 0;
+
+//seu loop aqui
+for (let i = 0; i < listaDeLucro.length; i++) {
+console.log(lucroTotal = lucroTotal + listaDeLucro[i])// coloque o valor em uma variável já existente
+}
+
+
+
+//Loop com Array - Saldo negativo
+
+var listaDeGanhos = [10, 30, -10, -5, -1, 40]
+var totalNegativos = 0
+
+//seu loop aqui:
+for (let i = 0; i < listaDeGanhos.length; i++) {
+    if (listaDeGanhos[i] < 0) {
+        totalNegativos ++
+    }
+console.log(totalNegativos)//armazene a contagem uma variável
+}
+
+
+//Loop Array - Frutas
+
+var listaDeFrutas = [ "Uva", "Banana",  "Manga", "Cajá", "Pinha"]
+var busca = "Cajá"
+
+//seu loop aqui
+for (let i = 0; i < listaDeFrutas.length; i++) {
+    if (listaDeFrutas[i] == busca) {
+        console.log("Sim, temos a fruta "+busca+" disponível")
+    }}
+
+
+//Break e Continue - Bingo
+
+var cartela = [8, 13, 18, 22, 42, 49]
+  var numeroSorteado = 42
+  //loop
+  for (let i = 0; i < cartela.length; i++) {
+    if(cartela[i] == numeroSorteado) {
+          console.log("Encontrei o número!")
+          break
+      }
+    }
+
+//Break e Continue - Sobrenome da família
+
+var familia = ["Joana", "Felipe", "Gabriela", "Carlos", "Pedro", "Bruno"]
+
+for (var i =0; i < familia.length; i++) {
+    if (familia[i] == "Pedro"){
+        console.log(familia[i] + " Sousa")
+       } else {
+        console.log(familia[i] + " Macedo")
+             continue
+    }
+}
+
+//Break e Continue - Baralho
+
+  var baralho = ["Ás", "Dama", "Rei", "Valete"]
+  
+ //Seu código aqui
+ for(var i = 0; i < baralho.length; i++){
+   if(baralho[i] == "Rei"){
+     console.log("Encontrei o Rei!")
+     break
+   }
+ }
+
+//Declarando funções - Listar produtos
+
+function listarProdutos (){
+//código do supermercado
+var lista = [ 'Leite', 'tomate', 'Biscoito', 'Tapioca']
+
+for(var i = 0; i < lista.length; i++){
+	console.log(lista[i])
+	}
+}
+
+//Declarando funções - Cartão de visita
+
+function cartaoDeVisitas () {
+var nome = "Deise"
+var sobrenome = "Silva"
+var profissao = "Pesquisadora"
+var cartaoDeVisita = nome +' ' + sobrenome + ' - ' + profissao
+
+console.log(cartaoDeVisita)
+}
+
+//Declarando funções - Cartão de visita
+
+function tabuadaDoSete (){
+    for (var i = 1; i < 11; i++) {
+console.log("7 x " + i + " = " + (7*i))
+    }
+}
+
+//Funções parametrizadas - Menor Número
+
+function menorNumero(a, b){
+    if (a < b)
+    return a
+  }
+
+//Funções parametrizadas - Autonommia
+
+function autonomia(quantidadeDeCombustivel, rendimento){
+	return quantidadeDeCombustivel * rendimento
+}
+
+//Funções parametrizadas - calculaValorDevido
+
+function calculaValorDevido(pesoDaRoupaSuja) {
+    return pesoDaRoupaSuja * 5
+}
+
+//Funções parametrizadas - calculaValorDevido 2
+
+function calculaValorDevido(pesoDeRoupaSuja){
+	var taxaDeServico = 10.00
+    var quiloDaRoupaSuja = 3.00
+    return pesoDeRoupaSuja * quiloDaRoupaSuja + taxaDeServico
+}
+
+//Usando funções - Começa com Maiúscula
+
+var palavras = ["Amor", "copo", "Bolacha", "biscoito"]
+
+function comecaComMaiuscula(palavra){
+    return /^[A-Z]/.test(palavra)
+}
+ // Seu código vem aqui embaixo.
+for (var i=0; i<palavras.length; i++){
+
+ if (palavras[i]==comecaComMaiuscula(palavras)){
+
+    console.log("Começa com maiúscula")
+
+ }else{
+
+    console.log("Não começa com maiúscula")
+
+ }
+
+}
+
+//Usando funções - Valida CPF
+
+function validaCPF() {
+   var cpf = "576.524.020-85"
+   if (validaCPF()){
+       console.log("CPF válido")
+   } else {
+       console.log("CPF inválido")
+   }
+}
+
+//Usando funções - deixaEntrar
+
+// A função a seguir (calculaIdade) não precisa ser alterada
+// A sua função deve ser escrita logo abaixo desta
+function calcularIdade(dataDeNascimento) {
+   var [dia, mes, ano] = dataDeNascimento.split('/');
+   var d = new Date();
+   var anoAtual = d.getFullYear();
+   var mesAtual = d.getMonth() + 1;
+   var diaAtual = d.getDate();
+   ano = +ano; mes = +mes; dia = +dia;
+   var quantosAnos = anoAtual - ano;
+   if (mesAtual < mes || mesAtual == mes && diaAtual < dia) {
+       quantosAnos--;
+   }
+   return quantosAnos < 0 ? 0 : quantosAnos;
+}
+ 
+// Escreva aqui sua função
+var registroGeral = "18/02/1988"
+
+function deixaEntrar(dataDeNascimento,censura){
+    return registroGeral >= calcularIdade(dataDeNascimento)
+}
+
+
+//retorna um array com os preços dos produtos mais baratos
+function maisBaratosQue(valor, precos) {
+   return precos.filter(p => p <= valor);
+}
+
+
+//Usando funções - Filtrar produtos
+
+//retorna um array com os preços mais caros 
+function maisCarosQue(valor, precos){
+   return precos.filter(p => p >= valor);
+}
+
+//Crie uma função
+function precosEntre(valorMenor, valorMaior, precos){
+   //deve utilizar as funções | atribuir valores/funções aos parâmetros
+      
+   //retornar preços que estão entre o valorMenor e o valorMaior. O parâmetro valor == valorMenor. O parâmetro precos == a função  maisBaratosQue; e dentro desta função o valor == valorMaior.
+   return maisCarosQue(valorMenor, maisBaratosQue(valorMaior, precos))
+
+}
+
+//Funções Nativas - Estava presente na aula?
+
+//um array guardasse o nome
+//escreva a função
+function estavaPresenteNaAula(nomeDoAluno, nomesDosPresentes) {
+    return nomesDosPresentes.indexOf(nomeDoAluno) != -1
+}
+
+//Funções Nativas - Gerar Dezenas
+
+//escreva uma funcção
+//não recebe parametro
+function gerarDezenas(){
+    
+    Math.round(Math.random()* 60)
+    return gerarDezenas != 0
+}
+
+//Funções Nativas - Maximo e Minimo
+
+//escreva uma função
+function maxmin(a,b,c,d,e){
+    return Math.min(maxmin()), Math.max(maxmin())
+}
+
+
+//Transforma Maiuscula
+
+function transformaParaMaiusculo(palavras) {  
+
+  var array=Array()
+
+  for(var i=0;i<palavras.length;++i)
+
+      array.push(palavras[i].toUpperCase())
+
+  return array
+
+}
+
+//Variáveis, if e loop
+
+var moradores = [
+    "Fulano de Tal",
+    "Beltrano da Cia",
+    "Viajante do Tempo",
+    "Morador da Lua",
+    "Marciano Azul",
+    "Et da Eslováquia",
+    "Jedi do Lado Cinza da Força",
+    "Baby Yoda Amarelo"
+]
+for (var i = 0; i < moradores.length; i++) {
+   if (i % 2 == 0) {
+       console.log("O morador " + moradores[i] + " pode usar o elevador")
+    }
+}
+
+//Dados De um usuário
+function maiorAlto (array)
+
+{
+
+   if(array[1] >= 18 && array[2] >=170  )
+
+   {
+
+       return true
+
+   }else{
+
+       return false
+
+   }
+
+}
+
+//Academia
+var alunos = [170, 159, 151, 187, 156, 191, 165, 154, 167, 169, 171, 170, 160]
+
+var grupoA = []
+var grupoB = []
+var grupoC = []
+
+for (var i = 0; i < alunos.length; i++) {
+   if (alunos[i] >= 150 && alunos[i]<= 159) {
+       grupoA.push(alunos[i])
+          }
+}
+
+for (var i = 0; i < alunos.length; i++) {
+   if (alunos[i] >= 160 && alunos[i]<= 169) {
+       grupoB.push(alunos[i])
+          }
+}
+
+for (var i = 0; i < alunos.length; i++) {
+   if (alunos[i] >= 170) {
+       grupoC.push(alunos[i])
+          }
+}
+
+//Estacionamento
+
+// Esse array é utilizado dentro das funções. Cada placa neste array representa
+// uma entrada do respectivo veículo no estacionamento. Não é necessário alterar
+// esse array.
+var placas = [
+   'RXB-2525', 'AKX-3333', 'ORO-7142','RXB-2525', 'AKX-3333', 'ORO-7142',
+   'AKX-3333', 'RXB-2525', 'AKX-3333','AKX-3333', 'RXB-2525', 'AKX-3333',   'RXB-2525', 'AKX-3333', 'ORO-7142','AKX-3333', 'AKX-3333', 'RXB-2525',
+   'AKX-3333', 'ORO-7142', 'ORO-7142','AKX-3333', 'AKX-3333', 'RXB-2525',
+   'AKX-3333', 'AKX-3333', 'RXB-2525','AKX-3333', 'AKX-3333', 'RXB-2525',
+   'AKX-3333', 'ORO-7142', 'ORO-7142','AKX-3333', 'ORO-7142', 'ORO-7142',
+   'ORO-7142', 'RXB-2525', 'AKX-3333','AKX-3333', 'ORO-7142', 'ORO-7142',
+   'AKX-3333', 'RXB-2525', 'AKX-3333','AKX-3333', 'RXB-2525', 'AKX-3333',
+   'RXB-2525', 'AKX-3333', 'ORO-7142','AKX-3333', 'AKX-3333', 'RXB-2525',
+   'AKX-3333', 'ORO-7142', 'ORO-7142','AKX-3333', 'AKX-3333', 'RXB-2525',
+   'AKX-3333', 'AKX-3333', 'RXB-2525','AKX-3333', 'AKX-3333', 'RXB-2525'
+]
+
+function calcularNumeroDeEntradas(placa){
+   // Seu código vem aqui...
+   var nEntrada = 0
+   for (var i = 0; i < placas.length; i++){if(placas[i] == placa){
+      return nEntrada++
+   }}
+}
+ 
+function calcularValorDevido(placa){
+   // Seu código vem aqui...a primeira função dentro da segunda
+   if (calcularNumeroDeEntradas(placa) <= 20) { 
+      return calcularNumeroDeEntradas(placa)*10  
+       } else {
+       return (200 + (calcularNumeroDeEntradas(placa)-20)*5) 
+   }
+}
+
+
+//Cinema
+
+// seu código vem aqui!
+//dar notas de 0 a 5 para um filme
+//Cada filme tem um grande array
+//ver o que as outras pessoas acharam do filme
+
+//escreva uma função com um parametro de notas
+var nNaoGostaram = 0
+var nMediano = 0
+var nGostaram = 0
+
+function calculaGostos(notas){
+for (var i = 0; i < notas.length; i++) {
+   if (notas[i] == 0 || (notas[i] == 1)) {
+       nNaoGostaram++
+          }else if(notas[i] == 2 || (notas[i] == 3)){
+nMediano++
+          }else{
+            nGostaram++
+             }
+    }
+    return [nNaoGostaram, nMediano, nGostaram]
+}
+
+//Personagens
+var personagens = ["Hermione", "Trinity", "Leia"]
+var filmes = ["Harry Potter", "Matrix", "Star wars"]
+var lancamentos = [2001, 1999, 1977]
+var id = 3
+var i = 0
+
+function filme(personagens, filmes, lancamentos, id)
+{
+
+  //receber também um valor de id
+  //até o tamanho de um dos arrays fornecidos
+  if ((id>0) && (id <= filmes.length)){
+    
+     return personagens[id-1] + " é um personagem do filme " + filmes[id-1] + " que estreou no cinema em " + lancamentos[id-1] + "."
+  } else {
+    return "Essa não é uma opção válida."
+  }
+  // Escreva abaixo o seu código:
+
+}
+
+//Séries
+
+function series(prefixo, array)
+{
+    // Escreve sua função abaixo:
+  var resultado = []
+
+for(var i = 0; i < array.length; i++){
+    resultado.push(prefixo+" "+array[i])
+}
+  return resultado
+ }
+
+
+//Mairo que o número
+
+function maiorQueNum(array, num)
+{
+  // Escreva abaixo o seu código:
+  //retorne um novo array
+
+  var retorna =[]
+for(var i = 0; i < array.length; i++){
+  if (array[i] > num){
+    retorna.push(array[i])
+  }
+}
+return retorna
+}
+
+//Buscar divisível
+
+function buscarDivisivelPor(array, num)
+{
+  // Escreva abaixo o seu código:
+ 
+  for( var i = 0 ; i< array.length; i++){
+//divisível pelo número dado e diferente de zero
+  if(array[i]!=0 && array[i]%num==0){
+ // retornando como resposta o primeiro número do array
+  return array[i] 
+} 
+
+ }
+  //Caso nenhum  passe no teste
+   return "Nenhum número válido encontrado!"
+  }
+
+//Repetindo Palavras
+//Crie uma função que receba dois valores
+function repete(valor,qtd){
+    //quantidade de vezes - loop repete...contador
+    for(var i=0; i < valor.length; i++){
+        //imprimir essa palavra.
+    console.log(valor)
+    }
+
+}
+
+
+//Comissão
+
+function comissao(preco,porcentagem){
+  var resultado = preco * porcentagem
+    return resultado/100
+  }
